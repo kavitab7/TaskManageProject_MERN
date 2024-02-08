@@ -11,8 +11,8 @@ const userSchema = new mongoose.Schema({
         type: String
     },
     task: {
-        type: mongoose.Types.ObjectId,
-        ref: 'Task'
+        type: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Task' }],
+        default: []
     },
 
 }, { timestamps: true });
