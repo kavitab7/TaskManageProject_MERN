@@ -32,7 +32,7 @@ const Login = () => {
                 })
                 localStorage.setItem("auth", JSON.stringify(data));
                 toast.success('Login successfully')
-                navigate('/task/all-tasks')
+                navigate('/task')
             }
         } catch (error) {
             console.log(error)

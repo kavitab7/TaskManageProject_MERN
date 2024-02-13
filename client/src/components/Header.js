@@ -22,11 +22,11 @@ const Header = () => {
                     {auth.user ? (<>
                         <NavLink to='/task' className="nav-link" >Tasks</NavLink>
                         <NavLink to="/task/create-task" className="nav-link" >Create Task</NavLink>
-                        <NavLink to="/" onClick={handleLogout} className="nav-link" >Logout</NavLink>
+                        <NavLink to="/" onClick={handleLogout} className="btn" >Logout</NavLink>
                     </>
                     ) : (<>
-                        <NavLink to="/login" className="nav-link" >Login</NavLink>
-                        <NavLink to="/register" className="nav-link" >Register</NavLink>
+                        <NavLink to="/login" className=" btn" >Login</NavLink>
+                        <NavLink to="/register" className="register btn" >Register</NavLink>
                     </>)}
                 </div>
 

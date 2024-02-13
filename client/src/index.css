@@ -30,7 +30,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: #ff4a4ab8;
+
 
   p {
     font-family: 'Protest Riot', sans-serif;
@@ -41,7 +41,7 @@ body {
 .home-btn {
   position: relative;
   overflow: hidden;
-  border: 1px solid #18181a;
+  border: 1px solid #615f5f;
   color: #ffffff;
   display: inline-block;
   font-size: 15px;
@@ -49,7 +49,7 @@ body {
   padding: 18px 26px 17px;
   text-decoration: none;
   cursor: pointer;
-  background: #00000080;
+  background: #c132b8cc;
   border-radius: 5px;
   user-select: none;
   -webkit-user-select: none;
@@ -129,7 +129,7 @@ body {
 
 .login-info .btn {
   width: 55%;
-  background-color: crimson;
+  background-color: #9c3e96;
   border: none;
 }
 
@@ -154,7 +154,21 @@ h4 {
   font-family: 'Titillium Web', sans-serif;
 }
 
-.nav-link::after,
+.register {
+  background: #9c3e96;
+  border: none;
+}
+
+.right-nav .btn {
+  border: 1px solid #9c3e96;
+  width: 80px;
+  color: white;
+  border-radius: 7px;
+  height: 6vh;
+  display: grid;
+  align-content: center;
+}
+
 h2::after {
   content: " ";
   width: 100%;
@@ -166,7 +180,7 @@ h2::after {
 }
 
 .nav-link:hover {
-  color: crimson;
+  color: #9c3e96;
 }
 
 .form-control {
@@ -182,7 +196,7 @@ h2::after {
   flex-direction: row;
   align-items: center;
   height: 8vh;
-  background: #2d2c2c;
+  background: black;
 }
 
 .right-nav {
@@ -190,6 +204,7 @@ h2::after {
   justify-content: flex-end;
   padding-right: 30px;
   flex-direction: row;
+  align-items: center;
   gap: 24px;
   width: 70%;
 }
@@ -337,7 +352,9 @@ li {
 }
 
 @media only screen and (max-width:600px) {
-
+  .login-info {
+    width: 23rem;
+  }
 
   h6 {
     flex-direction: column;
@@ -369,6 +386,7 @@ li {
       font-size: 0.7rem;
     }
   }
+
 
   .high {
     width: 40%;
